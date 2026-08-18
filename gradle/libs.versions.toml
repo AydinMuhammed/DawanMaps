@@ -7,6 +7,13 @@ appcompat = "1.7.1"
 material = "1.13.0"
 activity = "1.12.3"
 constraintlayout = "2.2.1"
+fragment = "1.8.5"
+
+# --- Nouveautés checkpoint 1 ---
+osmdroid = "6.1.20" # dépendance pour afficher la carte OpenStreetMap
+retrofit = "2.11.0" # dépendance pour gérer les requêtes HTTP et le parsing JSON
+gson = "2.11.0" # dépendance pour transformer les objets JSON en objets Java et inversement
+room = "2.6.1" # dépendance, couche supplémentaire pour gérer la base de données SQLite (déclaration des entités, DAO, etc.)
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -16,7 +23,17 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragment" }
+
+#droidmoids map sur la carte OpenStreetMap
+osmdroid = { group = "org.osmdroid", name = "osmdroid-android", version.ref = "osmdroid" }
+#bonus Réseau :
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+#room bdd :
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-

@@ -41,4 +41,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.osmdroid)        // Carte OpenStreetMap
+    implementation(libs.retrofit)        // Appels HTTP vers l'API Dawan
+    implementation(libs.converter.gson)  // JSON -> objets Java
+    implementation(libs.gson)            // Moteur JSON sous-jacent
+    implementation(libs.room.runtime)    // SQLite de haut niveau
+    annotationProcessor(libs.room.compiler) // Générateur de code Room (important)
+    androidTestImplementation(libs.fragment.testing) // Tests d'UI avec fragments
 }

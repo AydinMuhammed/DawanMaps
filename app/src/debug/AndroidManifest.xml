@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Nécessaire pour FragmentScenario (tests Espresso) :
+        la lib fragment-testing lance ses fragments dans EmptyFragmentActivity.
+        Déclarer ici (manifest debug) garantit que l'activité est fusionnée
+        dans l'APK de debug, utilisé par les instruments d'Android Gradle Plugin.
+    -->
+    <application>
+        <!-- tools:ignore : la classe vient d'une lib de test, inconnue du classpath de debug,
+             mais présente à l'exécution des tests -->
+        <activity
+            android:name="androidx.fragment.app.testing.EmptyFragmentActivity"
+            tools:ignore="MissingClass" />
+    </application>
+</manifest>

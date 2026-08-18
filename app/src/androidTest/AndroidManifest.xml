@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Activité fake requise par androidx.fragment:fragment-testing.
+        FragmentScenario.launchInContainer() l'utilise comme hôte pour
+        afficher nos fragments en test.
+    -->
+    <application>
+        <activity
+            android:name="androidx.fragment.app.testing.EmptyFragmentActivity"
+            android:exported="true" />
+    </application>
+</manifest>
